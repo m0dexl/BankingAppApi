@@ -12,6 +12,7 @@ namespace Business.Models.Response
         public string Phone_Number { get; set; } = default!;
         public string Address { get; set; } = default!;
         public int Balance { get; set; } = default!;
+        public DateTime CreatedAt { get; set; }
         public int CustomerUser_Id { get; set; } = default!;
     }
 }

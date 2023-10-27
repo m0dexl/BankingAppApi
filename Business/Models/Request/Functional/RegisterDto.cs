@@ -1,4 +1,6 @@
-﻿namespace Business.Models.Request.Functional;
+﻿using Infrastructure.Data.Postgres.Entities;
+
+namespace Business.Models.Request.Functional;
 
 public class RegisterDto
 {
@@ -6,4 +8,6 @@ public class RegisterDto
     public string UserName { get; set; } = default!;
     public string Password { get; set; } = default!;
     public string FullName { get; set; } = default!;
+    public UserType UserType { get; set; } = UserType.Customer;
+
 }
